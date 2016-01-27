@@ -28,6 +28,7 @@ public class LogoActivity extends MvpActivity<LogoView, LogoPresenter>
         textView.setText("nie wiem sam");
         Timber.plant(new Timber.DebugTree());
         presenter.keepCalmAndWait(this);
+
     }
 
 
@@ -36,13 +37,10 @@ public class LogoActivity extends MvpActivity<LogoView, LogoPresenter>
         return new LogoPresenter();
     }
 
-    @Override
-    public void startLogo(){
-    textView.setText("LogoActivity");
-    }
+
 
     @Override
-    public void startActivity() {
+    public void startLogo(){
         Timber.d("startActivity ok");
         textView.setText("Działa czy nie działa");
        // startActivity(new Intent(this, MySpidersActivity.class));
