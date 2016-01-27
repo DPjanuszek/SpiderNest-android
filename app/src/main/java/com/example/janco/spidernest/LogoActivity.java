@@ -1,5 +1,6 @@
 package com.example.janco.spidernest;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,7 +27,7 @@ public class LogoActivity extends MvpActivity<LogoView, LogoPresenter>
         ButterKnife.bind(this);
         textView.setText("nie wiem sam");
         Timber.plant(new Timber.DebugTree());
-        presenter.keepCalmAndWait();
+        presenter.keepCalmAndWait(this);
     }
 
 
