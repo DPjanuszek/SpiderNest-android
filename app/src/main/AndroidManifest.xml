@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MySpiderNest" />
-        <activity android:name=".MySpidersActivity"></activity>
+        <activity android:name=".mySpidersA.MySpidersActivity"></activity>
     </application>
 
 </manifest>

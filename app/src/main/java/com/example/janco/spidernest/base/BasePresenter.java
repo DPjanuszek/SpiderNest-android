@@ -1,11 +1,5 @@
 package com.example.janco.spidernest.base;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Handler;
-
-import com.example.janco.spidernest.MySpidersActivity;
 import com.hannesdorfmann.mosby.mvp.MvpBasePresenter;
 import com.hannesdorfmann.mosby.mvp.MvpPresenter;
 
