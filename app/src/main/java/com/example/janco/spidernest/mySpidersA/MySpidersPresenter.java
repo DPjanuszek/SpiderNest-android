@@ -7,13 +7,16 @@ import com.example.janco.spidernest.base.BasePresenter;
  */
 public class MySpidersPresenter extends BasePresenter<IMySpidersView> implements IMySpidersPresenter {
 
-
+    private Boolean a=false;
 
     public void tarantula () {
-
-        getView().showTarantula("Tarantula");
-
-
-
+        if (a==false) {
+            getView().showTarantula("Tarantula");
+            a=true;
+        }
+        else {
+            getView().showTarantula("");
+            a=false;
+        }
     }
 }
